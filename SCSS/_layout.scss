@@ -1,0 +1,196 @@
+@import './settings';
+
+
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    .report {
+        width: 17rem;
+        margin: 1rem 0;
+        background: $dark-blue;
+        border-radius: 15px;
+
+        .duration {
+            padding: 15px;
+            gap: 2rem;
+            align-items: center;
+
+
+
+        }
+    }
+
+    .profile {
+        background: $primary-color;
+        width: 17rem;
+        border-radius: 10px;
+        padding: 20px 10px;
+
+        .profile-detail {
+            .small {
+                color: $pale-blue;
+            }
+        }
+    }
+
+}
+
+.dashboard {
+    width: 45rem;
+
+    .board {
+        width: 17rem;
+
+        .duration-board {
+            background: $dark-blue;
+            padding: 5px;
+            border-radius: 10px;
+            margin-top: -1rem;
+
+            .flex-aligned {
+                margin: 7px 0;
+                padding: 0 5px;
+
+            }
+        }
+    }
+
+    .top-bar {
+        height: 3rem;
+        border-radius: 7px;
+    }
+
+    .work-board {
+
+        .top-bar {
+            background: url('/images/icon-work.svg') no-repeat right, $light-red;
+
+        }
+    }
+
+
+    .play-board {
+
+        .top-bar {
+            background: url('/images/icon-play.svg') no-repeat right, $soft-blue;
+
+        }
+    }
+
+    .study-board {
+
+        .top-bar {
+            background: url('/images/icon-study.svg') no-repeat right, $light-red-2;
+
+        }
+    }
+
+
+    .exercise-board {
+
+        .top-bar {
+            background: url('/images/icon-exercise.svg') no-repeat right, $lime;
+
+        }
+    }
+
+    .social-board {
+
+        .top-bar {
+            background: url('/images/icon-social.svg') no-repeat right, $violet;
+
+        }
+    }
+
+    .self__care-board {
+
+        .top-bar {
+            background: url('/images/icon-self-care.svg') no-repeat right, $soft-orange;
+
+        }
+    }
+
+}
+
+@media (min-width:760px) {
+    .container {
+        gap: 1rem;
+        justify-content: center;
+
+
+
+
+        .report {
+            align-items: flex-start;
+            width: 12rem;
+            margin: 0;
+
+            .duration {
+                gap: 1rem;
+
+
+                .duration-tab {
+                    width: 100%;
+                    text-align: left;
+                }
+            }
+        }
+
+        .profile {
+            background: $primary-color;
+            width: 17rem;
+            border-radius: 10px;
+            padding: 40px 20px;
+
+            .profile-detail {
+                .small {
+                    padding: 5px;
+                }
+            }
+        }
+    }
+
+    .dashboard {
+        .board {
+            width: 13rem;
+
+            .duration-board {
+                background: $dark-blue;
+                padding: 5px;
+                border-radius: 10px;
+                margin-top: -1rem;
+
+                &:hover {
+                    background: $desat-blue;
+                }
+
+                .flex-aligned {
+                    margin: 7px 0;
+                    padding: 0 5px;
+
+                }
+            }
+
+
+        }
+
+    }
+
+}
+
+.attribution {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: -2rem;
+    color: white;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}

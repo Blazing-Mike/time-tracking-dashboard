@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+$primary-color : hsl(246, 80%, 60%);
+$light-red: hsl(15, 100%, 70%); //work
+$soft-blue:hsl(195, 74%, 62%); // play
+$light-red-2:hsl(348, 100%, 68%); //study
+$lime: hsl(145, 58%, 55%); // exercise
+$violet: hsl(264, 64%, 52%); //social
+$soft-orange: hsl(43, 84%, 65%); // care
+
+$dark-blue-2:hsl(226, 43%, 10%);
+$dark-blue: hsl(235, 46%, 20%);
+$desat-blue: hsl(235, 45%, 61%);
+$pale-blue :hsl(236, 100%, 87%);
+
+$primary-font: 'Rubik',
+sans-serif;
+
+.flex {
+    display: flex;
+}
+
+.flex-aligned {
+    @extend .flex;
+    align-items: center;
+}
+
+.flex-perfect {
+    @extend .flex-aligned;
+    justify-content: center;
+}
+
+.jc-sb {
+    @extend .flex-aligned;
+    justify-content: space-between;
+}
+
+.fw-wrap {
+    flex-wrap: wrap;
+}
+
+.gap-x {
+    gap: 1rem;
+}
+
+.gap-xx {
+    gap: 2rem;
+}
+
+.profile {
+    .profile-image {
+        .image {
+            width: 3rem;
+            border: 2px solid white;
+            border-radius: 50%;
+        }
+    }
+}
+
+button {
+    background: inherit;
+    border: transparent;
+    color: $pale-blue;
+}
+
+.dots-container {
+    gap: 2px;
+
+    &:hover {
+        .dot {
+            background: white;
+
+        }
+    }
+
+    .dot {
+        background: $pale-blue;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+
+
+    }
+}
